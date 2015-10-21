@@ -19,9 +19,24 @@
                 <div class="form-group">
                     <label class="control-label" for="description">Description</label>
                     <div class="controls">
-                        <input type="text" data-ng-model="description" id="description" class="form-control" placeholder="Description" required>
+                        <textarea data-ng-model="description" id="description" class="form-control" rows="3" placeholder="Description" required></textarea>
                     </div>
                 </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="organizer">Organizer</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="organizer" id="organizer" class="form-control" placeholder="Organizer" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="requirements">Requirements</label>
+                    <div class="controls">
+                        <textarea data-ng-model="requirements" id="requirements" class="form-control" rows="3" placeholder="Requirements" required></textarea>
+                    </div>
+                </div>
+
 
                 <div class="form-group">
                     <input type="submit" class="btn btn-default">

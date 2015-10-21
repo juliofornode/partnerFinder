@@ -4,10 +4,20 @@
 		<h1 data-ng-bind="project.name"></h1>
 	</div>
 
+	<p>Organized by: {{ project.organizer }} </p>
+
+
 	<div>
 		<h4>Description:</h4>
 		<p data-ng-bind="project.description"></p>
 	</div>
+
+	<div>
+		<h4>What is the organizer looking for in a partner:</h4>
+		<p data-ng-bind="project.requirements"></p>
+	</div>
+
+
 
 	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == project.user._id))">
 		<a class="btn btn-primary" href="/#!/projects/{{project._id}}/edit">

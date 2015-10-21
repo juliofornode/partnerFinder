@@ -13,13 +13,25 @@ var ProjectSchema = new Schema({
 	name: {
 		type: String,
 		default: '',
-		required: 'Please fill Project name',
+		required: 'Please enter the name of the project',
 		trim: true
 	},
 	description: {
 		type: String,
 		default: '',
-		required: 'Please provide a description',
+		required: 'Please describe the project idea and current status',
+		trim: true
+	},
+	organizer: {
+		type: String,
+		default: '',
+		required: 'Please enter the name of the organizer',
+		trim: true
+	},
+	requirements: {
+		type: String,
+		default: '',
+		required: 'Please describe what would you expect from your ideal partners',
 		trim: true
 	},
 	created: {
