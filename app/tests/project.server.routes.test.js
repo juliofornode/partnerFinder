@@ -38,7 +38,10 @@ describe('Project CRUD tests', function() {
 		// Save a user to the test db and create new Project
 		user.save(function() {
 			project = {
-				name: 'Project Name'
+				name: 'Project Name',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			};
 
 			done();

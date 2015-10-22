@@ -30,6 +30,9 @@ describe('Project Model Unit Tests:', function() {
 		user.save(function() { 
 			project = new Project({
 				name: 'Project Name',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements',
 				user: user
 			});
 

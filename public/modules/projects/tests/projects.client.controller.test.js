@@ -53,7 +53,10 @@
 		it('$scope.find() should create an array with at least one Project object fetched from XHR', inject(function(Projects) {
 			// Create sample Project using the Projects service
 			var sampleProject = new Projects({
-				name: 'New Project'
+				name: 'New Project',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			});
 
 			// Create a sample Projects array that includes the new Project
@@ -73,7 +76,10 @@
 		it('$scope.findOne() should create an array with one Project object fetched from XHR using a projectId URL parameter', inject(function(Projects) {
 			// Define a sample Project object
 			var sampleProject = new Projects({
-				name: 'New Project'
+				name: 'New Project',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			});
 
 			// Set the URL parameter
@@ -93,13 +99,19 @@
 		it('$scope.create() with valid form data should send a POST request with the form input values and then locate to new object URL', inject(function(Projects) {
 			// Create a sample Project object
 			var sampleProjectPostData = new Projects({
-				name: 'New Project'
+				name: 'New Project',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			});
 
 			// Create a sample Project response
 			var sampleProjectResponse = new Projects({
 				_id: '525cf20451979dea2c000001',
-				name: 'New Project'
+				name: 'New Project',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			});
 
 			// Fixture mock form input values
@@ -123,7 +135,10 @@
 			// Define a sample Project put data
 			var sampleProjectPutData = new Projects({
 				_id: '525cf20451979dea2c000001',
-				name: 'New Project'
+				name: 'New Project',
+				description: 'Project Description',
+				organizer: 'Project Organizer',
+				requirements: 'Project Requirements'
 			});
 
 			// Mock Project in scope
