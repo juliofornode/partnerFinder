@@ -117,7 +117,7 @@ describe('Project CRUD tests', function() {
 					.expect(400)
 					.end(function(projectSaveErr, projectSaveRes) {
 						// Set message assertion
-						(projectSaveRes.body.message).should.match('Please fill Project name');
+						(projectSaveRes.body.message).should.match('Please enter the name of the project');
 						
 						// Handle Project save error
 						done(projectSaveErr);

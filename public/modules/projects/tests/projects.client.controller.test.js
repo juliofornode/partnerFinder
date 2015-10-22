@@ -116,6 +116,9 @@
 
 			// Fixture mock form input values
 			scope.name = 'New Project';
+			scope.description = 'Project Description';
+			scope.organizer = 'Project Organizer';
+			scope.requirements = 'Project Requirements';
 
 			// Set POST response
 			$httpBackend.expectPOST('projects', sampleProjectPostData).respond(sampleProjectResponse);
@@ -126,6 +129,10 @@
 
 			// Test form inputs are reset
 			expect(scope.name).toEqual('');
+			expect(scope.description).toEqual('');
+			expect(scope.organizer).toEqual('');
+			expect(scope.requirements).toEqual('');
+
 
 			// Test URL redirection after the Project was created
 			expect($location.path()).toBe('/projects/' + sampleProjectResponse._id);
