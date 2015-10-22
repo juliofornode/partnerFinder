@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://test:test@ds043324.mongolab.com:43324/partnerfinder' || 'localhost') + '/partnerfinder',
+	db: process.env.MONGOHQ_URL || process.env.MONGOLAB_URI || 'mongodb://test:test@ds043324.mongolab.com:43324/partnerfinder',
 	assets: {
 		lib: {
 			css: [
